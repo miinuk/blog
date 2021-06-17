@@ -1,12 +1,12 @@
 <?php 
 
     define('HOST','localhost');
-	define('DB','bd_escola');
+	define('DB','bd_escola1');
 	define('USERS','root');
 	define('PASS','');
 
 	try{
-		$pdo = new PDO('mysql:dbname=bd_escola;host=localhost','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+		$pdo = new PDO('mysql:dbname=bd_escola1;host=localhost','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 		$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 		//echo "Conectado com sucesso";
 	}catch(Exception $erro){
@@ -19,7 +19,7 @@
         $nota1 = $_POST['nota1'];
         $nota2 = $_POST['nota2'];
 
-        $sql = $pdo->prepare("INSERT INTO alunos VALUES (null,?,?,?,?)");
+        $sql = $pdo->prepare("INSERT INTO alunos VALUES (?,?,?,?,null)");
         $sql->execute(array($aluno,$disciplina,$nota1,$nota2));
     }
 
