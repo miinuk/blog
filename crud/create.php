@@ -3,7 +3,7 @@
     define('HOST','sql109.epizy.com');
 	define('DB','epiz_28912433_bd_escola');
 	define('USERS','epiz_28912433');
-	define('PASS','willian573');
+	define('PASS','3LCMi6ks6z');
 
 	try{
 		$pdo = new PDO('mysql:dbname=bd_escola;host=localhost','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
