@@ -6,7 +6,7 @@
 	define('PASS','willian573');
 
 	try{
-		$pdo = new PDO('mysql:dbname=bd_escola1;host=localhost','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+		$pdo = new PDO('mysql:dbname=bd_escola;host=localhost','root','',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 		$pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 		//echo "Conectado com sucesso";
 	}catch(Exception $erro){
