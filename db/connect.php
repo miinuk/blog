@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname   = "bd_escola1";
+$servername = "sql109.epizy.com";
+$username = "epiz_28912433";
+$password = "willian573";
+$dbname   = "epiz_28912433_bd_escola";
 
 
 try {
